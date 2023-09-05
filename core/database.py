@@ -4,13 +4,6 @@ from pymongo import MongoClient
 class Database:
     """Interact with conf variables."""
 
-    print(conf['mongo']['host'])
-    sm_session = MongoClient(host=conf['mongo']['host'],
-                             port=int(conf['mongo']['port'])).get_database('sportmonks')
-
-    bf_session = MongoClient(host=conf['mongo']['host'],
-                             port=int(conf['mongo']['port'])).get_database('betfair')
-
     be_session = MongoClient(host=conf['mongo']['host'],
                              port=int(conf['mongo']['port'])).get_database('betexplorer')
 
