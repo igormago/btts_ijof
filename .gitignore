@@ -1,0 +1,8 @@
+# Ignorar a pasta do ambiente virtual
+myenv/
+
+# Ignorar outros arquivos e pastas comuns em projetos Python
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
